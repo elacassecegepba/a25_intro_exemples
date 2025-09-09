@@ -36,9 +36,16 @@
             exempleMinutesEnSecondeButton = new Button();
             cours2GroupBox = new GroupBox();
             exerciceAddition2NombreButton = new Button();
+            cours5GroupBox = new GroupBox();
+            additionNombresHasardButton = new Button();
+            exerciceFonctionButton = new Button();
+            groupBox1 = new GroupBox();
+            hasardPartie1Button = new Button();
             cours4GroupBox.SuspendLayout();
             cours3GroupBox.SuspendLayout();
             cours2GroupBox.SuspendLayout();
+            cours5GroupBox.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // cours4GroupBox
@@ -123,12 +130,65 @@
             exerciceAddition2NombreButton.UseVisualStyleBackColor = true;
             exerciceAddition2NombreButton.Click += exerciceAddition2NombreButton_Click;
             // 
+            // cours5GroupBox
+            // 
+            cours5GroupBox.Controls.Add(additionNombresHasardButton);
+            cours5GroupBox.Controls.Add(exerciceFonctionButton);
+            cours5GroupBox.Location = new Point(12, 282);
+            cours5GroupBox.Name = "cours5GroupBox";
+            cours5GroupBox.Size = new Size(250, 99);
+            cours5GroupBox.TabIndex = 3;
+            cours5GroupBox.TabStop = false;
+            cours5GroupBox.Text = "Cours 5 - Fonction";
+            // 
+            // additionNombresHasardButton
+            // 
+            additionNombresHasardButton.Location = new Point(6, 61);
+            additionNombresHasardButton.Name = "additionNombresHasardButton";
+            additionNombresHasardButton.Size = new Size(238, 29);
+            additionNombresHasardButton.TabIndex = 1;
+            additionNombresHasardButton.Text = "Addition nombres hasard";
+            additionNombresHasardButton.UseVisualStyleBackColor = true;
+            additionNombresHasardButton.Click += additionNombresHasardButton_Click;
+            // 
+            // exerciceFonctionButton
+            // 
+            exerciceFonctionButton.Location = new Point(6, 26);
+            exerciceFonctionButton.Name = "exerciceFonctionButton";
+            exerciceFonctionButton.Size = new Size(238, 29);
+            exerciceFonctionButton.TabIndex = 0;
+            exerciceFonctionButton.Text = "Exercice fonction";
+            exerciceFonctionButton.UseVisualStyleBackColor = true;
+            exerciceFonctionButton.Click += exerciceFonctionButton_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(hasardPartie1Button);
+            groupBox1.Location = new Point(6, 387);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(250, 66);
+            groupBox1.TabIndex = 4;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Cours 6 - Fonction";
+            // 
+            // hasardPartie1Button
+            // 
+            hasardPartie1Button.Location = new Point(6, 26);
+            hasardPartie1Button.Name = "hasardPartie1Button";
+            hasardPartie1Button.Size = new Size(238, 29);
+            hasardPartie1Button.TabIndex = 1;
+            hasardPartie1Button.Text = "Hasard Partie 1";
+            hasardPartie1Button.UseVisualStyleBackColor = true;
+            hasardPartie1Button.Click += hasardPartie1Button_Click;
+            // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(272, 643);
+            Controls.Add(groupBox1);
+            Controls.Add(cours5GroupBox);
             Controls.Add(cours2GroupBox);
             Controls.Add(cours3GroupBox);
             Controls.Add(cours4GroupBox);
@@ -138,6 +198,8 @@
             cours4GroupBox.ResumeLayout(false);
             cours3GroupBox.ResumeLayout(false);
             cours2GroupBox.ResumeLayout(false);
+            cours5GroupBox.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -151,5 +213,10 @@
         private GroupBox cours2GroupBox;
         private Button exerciceAddition2NombreButton;
         private Button exemplePositifNegatifZeroButton;
+        private GroupBox cours5GroupBox;
+        private Button exerciceFonctionButton;
+        private Button additionNombresHasardButton;
+        private GroupBox groupBox1;
+        private Button hasardPartie1Button;
     }
 }

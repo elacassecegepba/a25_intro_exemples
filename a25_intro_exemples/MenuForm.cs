@@ -1,4 +1,6 @@
-﻿using System;
+﻿using a25_intro_exemples.cours5;
+using a25_intro_exemples.cours6;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +53,24 @@ namespace a25_intro_exemples
         {
             ExerciceIfForm exerciceIfForm = new ExerciceIfForm();
             exerciceIfForm.ShowDialog();
+        }
+
+        private void exerciceFonctionButton_Click(object sender, EventArgs e)
+        {
+            ExerciceFonctionForm exerciceFonctionForm = new ExerciceFonctionForm();
+            exerciceFonctionForm.ShowDialog();
+        }
+
+        private void additionNombresHasardButton_Click(object sender, EventArgs e)
+        {
+            AdditionNombresHasardForm additionNombresHasardForm = new AdditionNombresHasardForm();
+            additionNombresHasardForm.ShowDialog();
+        }
+
+        private void hasardPartie1Button_Click(object sender, EventArgs e)
+        {
+           HasardFormPartie1 hasardFormPartie1 = new HasardFormPartie1();
+           hasardFormPartie1.ShowDialog();
         }
     }
 }
