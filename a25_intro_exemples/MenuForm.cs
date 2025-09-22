@@ -1,14 +1,9 @@
-﻿using a25_intro_exemples.cours5;
+﻿using a25_intro_exemples.cours10;
+using a25_intro_exemples.cours5;
 using a25_intro_exemples.cours6;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using a25_intro_exemples.cours7;
+using a25_intro_exemples.cours8;
+using a25_intro_exemples.cours9;
 
 namespace a25_intro_exemples
 {
@@ -21,7 +16,7 @@ namespace a25_intro_exemples
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-            ClientSize = new Size(290, 200); // Change la taille du Form pour s'assurer qu'il entre dans l'écran
+            ClientSize = new Size(320, 600); // Change la taille du Form pour s'assurer qu'il entre dans l'écran
             cours2GroupBox.Select(); // Scroll en haut du Form
         }
 
@@ -69,8 +64,56 @@ namespace a25_intro_exemples
 
         private void hasardPartie1Button_Click(object sender, EventArgs e)
         {
-           HasardFormPartie1 hasardFormPartie1 = new HasardFormPartie1();
-           hasardFormPartie1.ShowDialog();
+            HasardFormPartie1 hasardFormPartie1 = new HasardFormPartie1();
+            hasardFormPartie1.ShowDialog();
+        }
+
+        private void exerciceRecapButton_Click(object sender, EventArgs e)
+        {
+            CalculatriceForm calculatriceForm = new CalculatriceForm();
+            calculatriceForm.ShowDialog();
+        }
+
+        private void ashtonButton_Click(object sender, EventArgs e)
+        {
+            AshtonForm ashtonForm = new AshtonForm();
+            ashtonForm.ShowDialog();
+        }
+
+        private void hypothenuseButton_Click(object sender, EventArgs e)
+        {
+            HypothenuseForm hypothenuseForm = new HypothenuseForm();
+            hypothenuseForm.ShowDialog();
+        }
+
+        private void palindromeButton_Click(object sender, EventArgs e)
+        {
+            PalindromeForm palindromeForm = new PalindromeForm();
+            palindromeForm.ShowDialog();
+        }
+
+        private void exerciceRefButton_Click(object sender, EventArgs e)
+        {
+            ExerciceRefForm exerciceRefForm = new ExerciceRefForm();
+            exerciceRefForm.ShowDialog();
+        }
+
+        private void exercicesSwitchButton_Click(object sender, EventArgs e)
+        {
+            ExercicesSwitchForm exercicesSwitchForm = new ExercicesSwitchForm();
+            exercicesSwitchForm.ShowDialog();
+        }
+
+        private void afficherSalutButton_Click(object sender, EventArgs e)
+        {
+            AfficherSalutForm afficherSalutForm = new AfficherSalutForm();
+            afficherSalutForm.ShowDialog();
+        }
+
+        private void affciherNombresButton_Click(object sender, EventArgs e)
+        {
+            AfficherNombresForm afficherNombresForm = new AfficherNombresForm();
+            afficherNombresForm.ShowDialog();
         }
     }
 }
