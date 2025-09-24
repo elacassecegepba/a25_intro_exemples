@@ -53,6 +53,8 @@
             palindromeButton = new Button();
             hypothenuseButton = new Button();
             ashtonButton = new Button();
+            cours11GroupBox = new GroupBox();
+            fizzBuzzButton = new Button();
             cours4GroupBox.SuspendLayout();
             cours3GroupBox.SuspendLayout();
             cours2GroupBox.SuspendLayout();
@@ -62,6 +64,7 @@
             cours9GroupBox.SuspendLayout();
             cours7GroupBox.SuspendLayout();
             cours8GroupBox.SuspendLayout();
+            cours11GroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // cours4GroupBox
@@ -355,12 +358,36 @@
             ashtonButton.UseVisualStyleBackColor = true;
             ashtonButton.Click += ashtonButton_Click;
             // 
+            // cours11GroupBox
+            // 
+            cours11GroupBox.Controls.Add(fizzBuzzButton);
+            cours11GroupBox.Location = new Point(15, 1100);
+            cours11GroupBox.Margin = new Padding(4);
+            cours11GroupBox.Name = "cours11GroupBox";
+            cours11GroupBox.Padding = new Padding(4);
+            cours11GroupBox.Size = new Size(312, 74);
+            cours11GroupBox.TabIndex = 6;
+            cours11GroupBox.TabStop = false;
+            cours11GroupBox.Text = "Cours 11 - Boucle";
+            // 
+            // fizzBuzzButton
+            // 
+            fizzBuzzButton.Location = new Point(8, 32);
+            fizzBuzzButton.Margin = new Padding(4);
+            fizzBuzzButton.Name = "fizzBuzzButton";
+            fizzBuzzButton.Size = new Size(298, 36);
+            fizzBuzzButton.TabIndex = 1;
+            fizzBuzzButton.Text = "FizzBuzz";
+            fizzBuzzButton.UseVisualStyleBackColor = true;
+            fizzBuzzButton.Click += fizzBuzzButton_Click;
+            // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(345, 1353);
+            Controls.Add(cours11GroupBox);
             Controls.Add(cours8GroupBox);
             Controls.Add(cours7GroupBox);
             Controls.Add(cours9GroupBox);
@@ -383,6 +410,7 @@
             cours9GroupBox.ResumeLayout(false);
             cours7GroupBox.ResumeLayout(false);
             cours8GroupBox.ResumeLayout(false);
+            cours11GroupBox.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -413,5 +441,7 @@
         private Button palindromeButton;
         private Button hypothenuseButton;
         private Button ashtonButton;
+        private GroupBox cours11GroupBox;
+        private Button fizzBuzzButton;
     }
 }

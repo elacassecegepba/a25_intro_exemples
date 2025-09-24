@@ -1,4 +1,5 @@
 ﻿using a25_intro_exemples.cours10;
+using a25_intro_exemples.cours11;
 using a25_intro_exemples.cours5;
 using a25_intro_exemples.cours6;
 using a25_intro_exemples.cours7;
@@ -114,6 +115,12 @@ namespace a25_intro_exemples
         {
             AfficherNombresForm afficherNombresForm = new AfficherNombresForm();
             afficherNombresForm.ShowDialog();
+        }
+
+        private void fizzBuzzButton_Click(object sender, EventArgs e)
+        {
+            FizzBuzzForm fizzBuzzForm = new FizzBuzzForm();
+            fizzBuzzForm.ShowDialog();
         }
     }
 }
