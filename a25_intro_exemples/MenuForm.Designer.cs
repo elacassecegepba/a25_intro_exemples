@@ -55,6 +55,9 @@
             ashtonButton = new Button();
             cours11GroupBox = new GroupBox();
             fizzBuzzButton = new Button();
+            cours14GroupBox = new GroupBox();
+            graphiqueButton = new Button();
+            classiqueButton = new Button();
             cours4GroupBox.SuspendLayout();
             cours3GroupBox.SuspendLayout();
             cours2GroupBox.SuspendLayout();
@@ -65,6 +68,7 @@
             cours7GroupBox.SuspendLayout();
             cours8GroupBox.SuspendLayout();
             cours11GroupBox.SuspendLayout();
+            cours14GroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // cours4GroupBox
@@ -381,12 +385,48 @@
             fizzBuzzButton.UseVisualStyleBackColor = true;
             fizzBuzzButton.Click += fizzBuzzButton_Click;
             // 
+            // cours14GroupBox
+            // 
+            cours14GroupBox.Controls.Add(graphiqueButton);
+            cours14GroupBox.Controls.Add(classiqueButton);
+            cours14GroupBox.Location = new Point(15, 1182);
+            cours14GroupBox.Margin = new Padding(4);
+            cours14GroupBox.Name = "cours14GroupBox";
+            cours14GroupBox.Padding = new Padding(4);
+            cours14GroupBox.Size = new Size(312, 177);
+            cours14GroupBox.TabIndex = 7;
+            cours14GroupBox.TabStop = false;
+            cours14GroupBox.Text = "Cours 14 - Révision";
+            // 
+            // graphiqueButton
+            // 
+            graphiqueButton.Location = new Point(7, 76);
+            graphiqueButton.Margin = new Padding(4);
+            graphiqueButton.Name = "graphiqueButton";
+            graphiqueButton.Size = new Size(298, 36);
+            graphiqueButton.TabIndex = 2;
+            graphiqueButton.Text = "Graphique";
+            graphiqueButton.UseVisualStyleBackColor = true;
+            graphiqueButton.Click += graphiqueButton_Click;
+            // 
+            // classiqueButton
+            // 
+            classiqueButton.Location = new Point(8, 32);
+            classiqueButton.Margin = new Padding(4);
+            classiqueButton.Name = "classiqueButton";
+            classiqueButton.Size = new Size(298, 36);
+            classiqueButton.TabIndex = 1;
+            classiqueButton.Text = "Classique";
+            classiqueButton.UseVisualStyleBackColor = true;
+            classiqueButton.Click += classiqueButton_Click;
+            // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(345, 1353);
+            Controls.Add(cours14GroupBox);
             Controls.Add(cours11GroupBox);
             Controls.Add(cours8GroupBox);
             Controls.Add(cours7GroupBox);
@@ -411,6 +451,7 @@
             cours7GroupBox.ResumeLayout(false);
             cours8GroupBox.ResumeLayout(false);
             cours11GroupBox.ResumeLayout(false);
+            cours14GroupBox.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -443,5 +484,8 @@
         private Button ashtonButton;
         private GroupBox cours11GroupBox;
         private Button fizzBuzzButton;
+        private GroupBox cours14GroupBox;
+        private Button classiqueButton;
+        private Button graphiqueButton;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using a25_intro_exemples.cours10;
 using a25_intro_exemples.cours11;
+using a25_intro_exemples.cours14;
 using a25_intro_exemples.cours5;
 using a25_intro_exemples.cours6;
 using a25_intro_exemples.cours7;
@@ -121,6 +122,18 @@ namespace a25_intro_exemples
         {
             FizzBuzzForm fizzBuzzForm = new FizzBuzzForm();
             fizzBuzzForm.ShowDialog();
+        }
+
+        private void classiqueButton_Click(object sender, EventArgs e)
+        {
+            ClassiqueForm classiqueForm = new ClassiqueForm();
+            classiqueForm.ShowDialog();
+        }
+
+        private void graphiqueButton_Click(object sender, EventArgs e)
+        {
+            GraphiqueForm graphiqueForm = new GraphiqueForm();
+            graphiqueForm.ShowDialog();
         }
     }
 }
